@@ -4,6 +4,7 @@
   align-items: center;
   border-bottom: 1px solid lightgray;
   background-color: var(--color_dark_bg);
+  padding: 0 1.5rem;
 }
 
 .filters {
@@ -20,8 +21,26 @@
   color: orange;
   margin: 0.6rem;
   background-color: transparent;
+  transition: 150ms;
 }
 
 .filter:hover {
   transform: translate(-0.3rem, -0.2rem);
+}
+
+.mode {
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  transition: 150ms;
+}
+
+.mode:hover {
+  background-color: black;
+  color: white;
 }

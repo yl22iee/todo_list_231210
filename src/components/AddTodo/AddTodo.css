@@ -9,18 +9,25 @@
   padding: 0.5rem;
   border: none;
   font-size: 20px;
-  margin-right: 0.5rem;
+  /* margin-right: 0.2rem; */
+}
+
+@media screen and (max-width: 450px) {
+  .input {
+    width: 80%;
+  }
 }
 
 .button {
   padding: 0.8rem 1rem;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   border: none;
   background-color: lightblue;
   text-transform: uppercase;
   font-weight: 900;
   color: white;
   cursor: pointer;
+  transition: 150ms;
 }
 
 .button:hover {
