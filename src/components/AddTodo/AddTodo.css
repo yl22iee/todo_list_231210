@@ -1,0 +1,28 @@
+.form {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: var(--color_dark_bg);
+}
+
+.input {
+  width: 85%;
+  padding: 0.5rem;
+  border: none;
+  font-size: 20px;
+  margin-right: 0.5rem;
+}
+
+.button {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: lightblue;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightpink;
+}

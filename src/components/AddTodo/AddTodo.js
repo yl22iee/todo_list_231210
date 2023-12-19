@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import "./AddTodo.css";
 // v4를 uuidv4로 변경
 
 export default function AddTodo({ onAdd }) {
@@ -15,8 +16,9 @@ export default function AddTodo({ onAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <input
+        className="input"
         type="text"
         placeholder="write todo"
         value={text}
@@ -24,7 +26,7 @@ export default function AddTodo({ onAdd }) {
           setText(e.target.value);
         }}
       />
-      <button>Add</button>
+      <button className="button">Add</button>
     </form>
   );
 }

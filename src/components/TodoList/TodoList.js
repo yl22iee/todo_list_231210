@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import AddTodo from "../AddTodo/AddTodo";
-import TodoDelete from "../TodoDelete/TodoDelete";
+import Todo from "../TodoDelete/Todo";
 // import { v4 as uuidv4 } from "uuid";
+import "./TodoList.css";
 
 export default function TodoList({ filter }) {
   const [todos, setTodos] = useState([
@@ -17,13 +18,13 @@ export default function TodoList({ filter }) {
   const handleDelete = (deleted) =>
     setTodos(todos.filter((t) => t.id !== deleted.id));
 
-  const filtered = getFilteredItems({ todos, filter });
+  const filtered = getFilteredItems(todos, filter);
 
   return (
-    <div>
-      <ul>
-        {todos.map((item) => (
-          <TodoDelete
+    <section className="container">
+      <ul className="list">
+        {filtered.map((item) => (
+          <Todo
             key={item.id}
             todo={item}
             onUpdate={handleUpdate}
@@ -31,14 +32,14 @@ export default function TodoList({ filter }) {
           />
         ))}
       </ul>
-      <AddTodo onAdd={handleAdd} />
-    </div>
+      <AddTodo className="Addlist" onAdd={handleAdd} />
+    </section>
   );
 }
 
 function getFilteredItems(todos, filter) {
-  if (filter === "all") {
+  if (filter === "All") {
     return todos;
   }
-  // 아.. 몰겠다 상태값을 반환하는거 모르낟.
+  return todos.filter((todo) => todo.status === filter);
 }
