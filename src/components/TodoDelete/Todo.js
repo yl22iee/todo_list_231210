@@ -9,6 +9,7 @@ export default function Todo({ todo, onUpdate, onDelete }) {
     onUpdate({ ...todo, status });
   };
   const handleDelete = () => onDelete(todo);
+
   return (
     <li className="todo">
       <input
