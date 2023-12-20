@@ -5,9 +5,9 @@ import { VscColorMode } from "react-icons/vsc";
 export default function Header({ filter, filters, onFilterChange }) {
   return (
     <header className="header">
-      <div className="mode">
+      {/* <div className="mode">
         <VscColorMode />
-      </div>
+      </div> */}
       <ul className="filters">
         {filters.map((value, id) => (
           <li key={id}>

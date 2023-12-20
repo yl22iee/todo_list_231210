@@ -26,10 +26,10 @@ export default function TodoList({ filter }) {
   return (
     <section className="container">
       <ul className="ul">
-        {filtered.map((item) => (
+        {filtered.map((item, index) => (
           <li className="list" onClick={handleClick}>
             <Todo
-              key={item.id}
+              key={index}
               todo={item}
               onUpdate={handleUpdate}
               onDelete={handleDelete}
