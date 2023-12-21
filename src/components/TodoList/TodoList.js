@@ -17,7 +17,7 @@ export default function TodoList({ filter }) {
 
   const filtered = getFilteredItems(todos, filter);
 
-  const handleClick = (e) => {};
+  // const [check, setCheck] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
@@ -27,7 +27,7 @@ export default function TodoList({ filter }) {
     <section className="container">
       <ul className="ul">
         {filtered.map((item, index) => (
-          <li className="list" onClick={handleClick}>
+          <li className="list">
             <Todo
               key={index}
               todo={item}
