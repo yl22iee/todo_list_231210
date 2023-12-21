@@ -17,7 +17,7 @@ export default function TodoList({ filter }) {
 
   const filtered = getFilteredItems(todos, filter);
 
-  // const [check, setCheck] = useState(false);
+  const [check, setCheck] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
