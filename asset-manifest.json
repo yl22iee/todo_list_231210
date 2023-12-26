@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yl22iee/todo_list_231210/static/css/main.13280950.css",
+    "main.js": "/yl22iee/todo_list_231210/static/js/main.50f08d82.js",
+    "index.html": "/yl22iee/todo_list_231210/index.html",
+    "main.13280950.css.map": "/yl22iee/todo_list_231210/static/css/main.13280950.css.map",
+    "main.50f08d82.js.map": "/yl22iee/todo_list_231210/static/js/main.50f08d82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13280950.css",
+    "static/js/main.50f08d82.js"
+  ]
+}
