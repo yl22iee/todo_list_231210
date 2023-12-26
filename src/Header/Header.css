@@ -7,6 +7,12 @@
   padding: 0 1.5rem;
 }
 
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 0.8rem;
+  }
+}
+
 .filters {
   display: flex;
 }
@@ -22,6 +28,9 @@
   margin: 0.6rem;
   background-color: transparent;
   transition: 150ms;
+}
+
+@media screen and (max-width: 450px) {
 }
 
 .filter:hover {

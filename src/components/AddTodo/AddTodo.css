@@ -17,6 +17,7 @@
 @media screen and (max-width: 450px) {
   .input {
     width: 80%;
+    padding: 1rem;
   }
 }
 
@@ -30,6 +31,12 @@
   color: white;
   cursor: pointer;
   transition: 150ms;
+}
+
+@media screen and (max-width: 450px) {
+  .button {
+    padding: 1.2rem;
+  }
 }
 
 .button:hover {
