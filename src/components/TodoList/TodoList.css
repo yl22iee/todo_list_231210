@@ -12,4 +12,11 @@
 }
 
 .list {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+  .list {
+    padding: 0.2rem;
+  }
 }

@@ -10,7 +10,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-toggle-dark-mode": "^1.1.1",
     "styled-components": "^6.1.1",
     "styled-reset": "^4.5.1",
@@ -43,5 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://yl22iee.github.io/todo_list_231210/"
+  "homepage": "https://github.com/yl22iee/todo_list_231210?tab=readme-ov-file#todo"
 }
